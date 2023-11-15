@@ -1,0 +1,21 @@
+<div class="baches">
+  <form class="custom-form" (ngSubmit)="Enviar()">
+    <h1>Archivo</h1>
+    <input
+      type="text"
+      name="tipoDeDano"
+      placeholder="Tipo de daño"
+      required
+      [(ngModel)]="tipoDeDano"
+    />
+    <input
+      type="text"
+      name="costo"
+      placeholder="Costo"
+      required
+      [(ngModel)]="costo"
+    />
+
+    <button type="submit">Enviar</button>
+  </form>
+</div>

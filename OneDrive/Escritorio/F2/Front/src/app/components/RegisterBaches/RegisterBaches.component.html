@@ -1,0 +1,44 @@
+<div class="baches">
+  <form class="custom-form" (ngSubmit)="submitForm()">
+    <h1>Baches</h1>
+    <input
+      type="text"
+      name="direccion"
+      placeholder="Dirección"
+      required
+      [(ngModel)]="formData.direccion"
+    />
+    <input
+      type="text"
+      name="tamaño"
+      placeholder="Tamaño"
+      required
+      [(ngModel)]="formData.tamano"
+    />
+    <input
+      type="text"
+      name="ubicacion"
+      placeholder="Ubicación"
+      required
+      [(ngModel)]="formData.ubicacion"
+    />
+    <input
+      type="text"
+      name="distrito"
+      placeholder="Distrito"
+      required
+      [(ngModel)]="formData.distrito"
+    />
+    <input
+      type="text"
+      name="urgencia"
+      placeholder="Urgencia"
+      required
+      [(ngModel)]="formData.urgencia"
+    />
+
+    <button type="submit">Registrar</button>
+    <br>
+    <button type="submit"  class="custom-button" (click)="ir()">Consultar</button> 
+  </form>
+</div>

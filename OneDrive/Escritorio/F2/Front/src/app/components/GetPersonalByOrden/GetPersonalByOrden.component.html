@@ -1,0 +1,40 @@
+<br />
+<meta charset="utf-8" />
+<div class="container">
+  <h1 class="custom-font">Personal registrado</h1>
+  <table class="table">
+    <thead class="table-dark">
+      <tr>
+        <th>Codigo</th>
+        <th>Cedula</th>
+        <th>Nombre</th>
+        <th>Direccion</th>
+        <th>Telefono</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of personalList">
+        <td>{{ item.idp }}</td>
+        <td>{{ item.cedula }}</td>
+        <td>{{ item.nombre }}</td>
+        <td>{{ item.direccion }}</td>
+        <td>{{ item.telefono }}</td>
+        <!---  <td>
+          <button
+            type="button"
+            class="btn btn-dark"
+            (click)="Averia()"
+            style="margin-right: 50px"
+          >
+            Averia
+          </button>
+           <button type="button" class="btn btn-danger">Eliminar</button>
+        </td>
+      -->
+        <!--- <td th:text="${Estudiante.programa}">Programa</td>-->
+      </tr>
+    </tbody>
+  </table>
+  <br />
+</div>
