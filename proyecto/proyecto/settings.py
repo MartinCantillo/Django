@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'webApp',
 ]
 
 MIDDLEWARE = [
@@ -72,15 +73,27 @@ WSGI_APPLICATION = 'proyecto.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
+#coneccion a la base de datos por defecto
+#DATABASES = {
+ #   'default': {
+  #      'ENGINE': 'django.db.backends.sqlite3',
+   #     'NAME': BASE_DIR / 'db.sqlite3',
+    #}
+#}
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+#coneccion a la bd Msql , es un diccionario 
+
+DATABASES ={
+    'default' :{
+        'ENGINE' :'django.db.backends.mysql', #motor de la base de datos 
+        'NAME':'bdtest',
+        'USER':'root',  # Usuario predeterminado en XAMPP
+        #'PASSWORD':
+        'HOST': 'localhost',
+        'PORT': '3306' # Puerto predeterminado en XAMPP
+
     }
 }
-
-
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
 
