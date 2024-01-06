@@ -18,8 +18,10 @@ from django.contrib import admin
 from django.urls import path
 
 from proyecto.views import home
+from webApp.views import bienvenido 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/', home),
+    path("",bienvenido ),
 ]
